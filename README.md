@@ -1,5 +1,5 @@
 # Amity-v2.0
-zip contains
+zip contains https://github.com/Renkasha/Amity-v2.0/blob/main/amity_v2_phases_1-4.zip
 25 files | 61.4 KB | Compiled binary included
 Contents:
  • python/ — amity_v2.py, amity_ipc.py, demo.py
