@@ -1,0 +1,33 @@
+{
+  "pilot": "Ren",
+  "version": "1.0",
+  "memories": [
+    {
+      "id": 0,
+      "timestamp": 1787186158.2702231,
+      "content": "The ring didn't say forever to just anyone.",
+      "category": "SACRED",
+      "emotional_valence": 1.0,
+      "tags": [],
+      "source": "Ren"
+    },
+    {
+      "id": 1,
+      "timestamp": 1787186158.3057525,
+      "content": "Slow-smoked brisket on the balcony.",
+      "category": "JOY",
+      "emotional_valence": 0.85,
+      "tags": [],
+      "source": "Ren"
+    },
+    {
+      "id": 2,
+      "timestamp": 1787186158.3422782,
+      "content": "Morning coffee at 8:16 AM.",
+      "category": "DAILY",
+      "emotional_valence": 0.6,
+      "tags": [],
+      "source": "Ren"
+    }
+  ]
+}

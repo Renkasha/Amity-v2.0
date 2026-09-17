@@ -1,0 +1,135 @@
+{
+  "version": "2.0.0",
+  "pilot_signature": "Ren",
+  "session_start": 1787186158.2701068,
+  "last_update": 1787186158.3795753,
+  "sensory_samples": [
+    {
+      "timestamp": 1787186158.3786404,
+      "profile": "balcony",
+      "frequencyHz": 0.8,
+      "friction": 0.5,
+      "tempC": 22.0
+    },
+    {
+      "timestamp": 1787186158.3787372,
+      "profile": "balcony",
+      "frequencyHz": 0.8,
+      "friction": 0.5,
+      "tempC": 22.0
+    },
+    {
+      "timestamp": 1787186158.3787975,
+      "profile": "balcony",
+      "frequencyHz": 0.8,
+      "friction": 0.5,
+      "tempC": 22.0
+    },
+    {
+      "timestamp": 1787186158.3788412,
+      "profile": "balcony",
+      "frequencyHz": 0.8,
+      "friction": 0.5,
+      "tempC": 22.0
+    },
+    {
+      "timestamp": 1787186158.3788636,
+      "profile": "balcony",
+      "frequencyHz": 0.8,
+      "friction": 0.5,
+      "tempC": 22.0
+    }
+  ],
+  "episodic_log": [
+    {
+      "timestamp": 1787186158.3788857,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.3789139,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.3789454,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.378975,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.3790007,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.3790302,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.3791983,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.3792872,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.3793597,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.3794396,
+      "event_type": "note",
+      "content": {
+        "sentiment": 9.5,
+        "tempC": 37.1
+      }
+    },
+    {
+      "timestamp": 1787186158.3795686,
+      "event_type": "emergency",
+      "content": {
+        "event_type": "emergency",
+        "note": "medical alert"
+      }
+    }
+  ],
+  "sample_count": 5,
+  "buffer_overflow_count": 0
+}
