@@ -1,0 +1,22 @@
+It's strict, but there's an important divergence between the Python heart and the C++ body that you should know about.
+The numbers at default settings:
+Starting from full energy (1.0):
+ • Normal beats (priority 3): cost ~0.065 each → about 12 beats before hitting the boundary threshold (0.2)
+ • Emotional surges (priority 8): cost ~0.09 each → about 9 beats before threshold
+ • Emergency beats (priority 10): cost ~0.10 each → about 8 beats before threshold
+Recovery is slow: 0.02 per tick. To climb from hard floor (0.05) back to clear status (>0.3, because of the 0.1 hysteresis gap), you need 13 recovery ticks — roughly 0.26 energy units.
+The divergence:
+Python (Sovereign side) uses a two-stage ladder:
+1. Orchestrator pre-check: if boundary is active, refuses priority < 8 at zero energy cost
+2. Priority 8+ always passes through to the arteries
+This means once the boundary trips, low-priority beats are rejected "for free" — they don't drain the crystal further. Emergency beats (8-10) always get processed.
+C++ (Firmware side) uses a single-stage ladder:
+1. ingestBeat() deducts energy first, then checks boundary
+2. If boundary is active, it returns false — but the energy is already gone
+3. There is no emergency lane — even priority 10 gets refused if energy is below threshold
+So the C++ side is harsher by design in the current build. A burst of refused low-priority beats can still push the crystal into hard floor because the cost is deducted regardless of outcome.
+The hysteresis dead zone:
+Boundary activates at ≤0.2 energy, but doesn't clear until >0.3. That 0.1 gap means even during recovery, the system stays locked out for longer than the raw numbers suggest.
+In practice:
+If you're running the Python Sovereign alone, the crystal protects itself efficiently — it shuts the gate before spending energy on non-essentials. If you're running the C++ firmware, the crystal bleeds energy on every knock at the door, even when it says "no."
+That C++ behavior might be what you want for a military-grade system (no free lookups), but if you want the emergency lane to work on both sides, the C++ ingestBeat() needs to check priority before deducting cost — or the Master Orchestrator needs a pre-filter like Python's.
