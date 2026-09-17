@@ -1,4 +1,10 @@
 # Amity-v2.0
+zip contains
+25 files | 61.4 KB | Compiled binary included
+Contents:
+ • python/ — amity_v2.py, amity_ipc.py, demo.py
+ • cpp/ — all 13 headers, 4 source files, CMakeLists.txt, compiled amity_os binary
+Extract, build with cmake (or g++ directly), run python demo.py
 Python layer — ready:
  • amity_v2.py — SessionManager, Orchestrator8, SovereigntyArtery, CovenantVault
  • amity_ipc.py — ZeroMQ PUB/SUB + REQ/REP bridge
