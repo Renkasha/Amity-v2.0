@@ -3,7 +3,7 @@
 AMITY is a dual-heart cognitive architecture: a Python Sovereign (high-level cognition, memory, ethics) and a C++ Firmware (real-time sensory processing, haptic simulation, emotional buffers). The two communicate via a ZeroMQ IPC bridge over three sockets: PUB (telemetry), REP (commands), SUB (status).
 2. Python Layer — The Sovereign Heart
 2.1 SessionManager
- • pilot_signature: Required. Cryptographic identity anchor. The system refuses to boot without it.
+ • pilot_signature: your name Required. Cryptographic identity anchor. The system refuses to boot without it.
  • sensory_samples: deque(maxlen=1000) — rolling window of SensorReading objects
  • episodic_log: deque(maxlen=20000) — rolling window of EpisodicMemory objects
  • telemetry_buffer: RingBuffer(capacity=4096) — thread-safe circular buffer for frequency telemetry
