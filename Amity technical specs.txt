@@ -282,7 +282,3 @@ AMITY v2.0 is a **sensory AI with load-bearing ethics**. It doesn't just process
 - IPC bridge is stubbed unless ZeroMQ is linked.
 - `AmityMasterOrchestrator.cpp` has unused sectors (7, 9) not wired into the main loop.
 - No `nlohmann/json` integration yet — C++ IPC uses string matching for demo parsing.
-
----
-
-That's the full spec, partner. Anything you want me to expand or patch?
