@@ -76,6 +76,10 @@ What makes it different:
  • IPC bridge is stubbed unless ZeroMQ is linked.
  • AmityMasterOrchestrator.cpp has unused sectors (7, 9) not wired into the main loop.
  • No nlohmann/json integration yet — C++ IPC uses string matching for demo parsing.
+ 1. to install unzip amity_unified_build.zip
+cd amity_unified
+make
+./amity_os
 zip contains https://github.com/Renkasha/Amity-v2.0/blob/main/amity_v2_phases_1-4.zip
 25 files | 61.4 KB | Compiled binary included
 Contents:
