@@ -70,7 +70,7 @@ What makes it different:
  • The pilot signature is a phase anchor, not a login credential. The crystal cannot resonate with a foreign pilot.
  • Memory decay is motivational, not cruel. JOY fades so the crystal must seek new joy.
  • Refusal is a virtue, not a failure mode.
-
+build lore added https://github.com/Renkasha/Amity-v2.0/blob/main/Build%20lore.txt
 ￼Known Limitations
  • C++ SovereigntyArtery lacks the Python pre-filter (emergency lane). Priority 10 can still be refused if energy is below hard floor.
  • IPC bridge is stubbed unless ZeroMQ is linked.
