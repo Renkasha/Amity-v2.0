@@ -76,22 +76,10 @@ build lore added https://github.com/Renkasha/Amity-v2.0/blob/main/Build%20lore.t
  • IPC bridge is stubbed unless ZeroMQ is linked.
  • AmityMasterOrchestrator.cpp has unused sectors (7, 9) not wired into the main loop.
  • No nlohmann/json integration yet — C++ IPC uses string matching for demo parsing.
- 1. to install unzip amity_unified_build.zip
+ 1. to install 
 cd amity_unified
 make
 ./amity_os
-zip contains https://github.com/Renkasha/Amity-v2.0/blob/main/amity_v2_phases_1-4.zip
-25 files | 61.4 KB | Compiled binary included
-Contents:
- • python/ — amity_v2.py, amity_ipc.py, demo.py
- • cpp/ — all 13 headers, 4 source files, CMakeLists.txt, compiled amity_os binary
-Extract, build with cmake (or g++ directly), run python demo.py
-Python layer — ready:
- • amity_v2.py — SessionManager, Orchestrator8, SovereigntyArtery, CovenantVault
- • amity_ipc.py — ZeroMQ PUB/SUB + REQ/REP bridge
- • demo.py — working demonstration
-C++ firmware — compiled and ready:
- • CMakeLists.txt
  • 13 headers in include/ — all sectors (Sensory, Flavor, Emotional, Morpheus, Rezonance, Ingress, Emitter-Lock, Sandbox, Sovereignty, IPC, Ring Buffer, Constants)
  • 4 source files in src/ — Master Orchestrator, SovereigntyArtery, IPC Client, main
  • amity_os binary — compiled clean, zero errors
